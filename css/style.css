@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* --- Panel --- */
+.panel {
+  display: grid;
+  grid-template-columns: 40px 3rem 160px 3rem 90px;
+  grid-template-areas: "menu-btn . brand-area . icon-area";
+  top: 0;
+  height: 35px;
+  width: 100%;
+  position: sticky;
+  background-color: #0f0f0f;
+}
+.panel .menu-btn {
+  display: inline-block;
+  z-index: 2;
+  grid-area: menu-btn;
+  cursor: pointer;
+  padding: 5px;
+}
+.panel .menu-btn .btn-line {
+  z-index: 2;
+  background-color: #ffffff;
+  width: 28px;
+  height: 3px;
+  margin-bottom: 5.64px;
+  border-radius: 2px;
+}
+.panel .menu-btn .btn-line.line2 {
+  width: 1.3rem;
+}
+.panel .menu-btn .btn-line.line3 {
+  width: 0.8rem;
+}
+.panel .brand-area {
+  display: inline-block;
+  grid-area: brand-area;
+}
+.panel .brand-area .brand-text {
+  color: #ffffff;
+  text-align: end;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+/* --- Toggler --- */
+input.toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 35px;
+  z-index: 3;
+  opacity: 0;
+  justify-self: center;
+  align-self: center;
+}
+
+/* --- Menu-Nav --- */
+.menu-nav {
+  visibility: hidden;
+}
+
+input.toggler:checked + .menu-nav {
+  visibility: visible;
+  background-color: #0f0f0f;
+  text-transform: uppercase;
+}
+input.toggler:checked + .menu-nav ul.nav-items > li.nav-item {
+  padding: 25px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+input.toggler:checked + .menu-nav ul.nav-items > li.nav-item a.nav-link {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */

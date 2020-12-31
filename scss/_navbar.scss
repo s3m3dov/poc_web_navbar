@@ -1,0 +1,75 @@
+/* --- Panel --- */
+.panel {
+    display: grid;
+    grid-template-columns: 40px 3rem 160px 3rem 90px;
+    grid-template-areas: 
+    'menu-btn . brand-area . icon-area';
+    top: 0;
+    height: 35px;
+    width: 100%;
+    position: sticky;
+    background-color: $nav-backg;
+    .menu-btn {
+        display: inline-block;
+        z-index: 2;
+        grid-area: menu-btn;
+        cursor: pointer;
+        padding: 5px;
+        .btn-line {
+            z-index: 2;
+            background-color: #ffffff;
+            width: 28px;
+            height: 3px;
+            margin-bottom: 5.64px;
+            border-radius: 2px;
+            &.line2 {
+                width: 1.3rem;
+            }
+            &.line3 {
+                width: 0.8rem;
+            }
+        }
+    }
+    .brand-area {
+        display: inline-block;
+        grid-area: brand-area;
+        .brand-text {
+            color: #ffffff;
+            text-align: end;
+            justify-content: center;
+            text-transform: uppercase;
+        }
+    }
+}
+/* --- Toggler --- */
+input.toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 35px;
+    z-index: 3;
+    opacity: 0;
+    justify-self: center;
+    align-self: center;
+}
+
+/* --- Menu-Nav --- */
+.menu-nav {
+    visibility: hidden;
+}
+input.toggler:checked + .menu-nav {
+    visibility: visible;
+    background-color: $nav-backg;
+    text-transform: uppercase;
+    ul.nav-items > li.nav-item {
+        padding: 25px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        // transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) ;
+        a.nav-link {
+            color: #ffffff;
+        }
+    }
+}
