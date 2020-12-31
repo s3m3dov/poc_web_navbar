@@ -18,15 +18,16 @@
         .btn-line {
             z-index: 2;
             background-color: #ffffff;
+            transition: all 0.3s ease-out;
             width: 28px;
-            height: 3px;
-            margin-bottom: 5.64px;
+            height: 4px;
+            margin-bottom: 5px;
             border-radius: 2px;
             &.line2 {
-                width: 1.3rem;
+                width: 22.4px;
             }
             &.line3 {
-                width: 0.8rem;
+                width: 16.8px;
             }
         }
     }
@@ -58,7 +59,7 @@ input.toggler {
 .menu-nav {
     visibility: hidden;
 }
-input.toggler:checked + .menu-nav {
+input.toggler:checked ~ .menu-nav {
     visibility: visible;
     background-color: $nav-backg;
     text-transform: uppercase;
@@ -71,5 +72,15 @@ input.toggler:checked + .menu-nav {
         a.nav-link {
             color: #ffffff;
         }
+    }
+}
+// -- Menu Icon --
+input.toggler:checked + .panel > .menu-btn > .btn-lines > .btn-line {
+    transition: all 0.3s ease-out;
+    &.line1 {
+        width: 16.8px;
+    }
+    &.line3 {
+        width: 28px;
     }
 }

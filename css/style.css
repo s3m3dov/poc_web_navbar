@@ -27,16 +27,17 @@
 .panel .menu-btn .btn-line {
   z-index: 2;
   background-color: #ffffff;
+  transition: all 0.3s ease-out;
   width: 28px;
-  height: 3px;
-  margin-bottom: 5.64px;
+  height: 4px;
+  margin-bottom: 5px;
   border-radius: 2px;
 }
 .panel .menu-btn .btn-line.line2 {
-  width: 1.3rem;
+  width: 22.4px;
 }
 .panel .menu-btn .btn-line.line3 {
-  width: 0.8rem;
+  width: 16.8px;
 }
 .panel .brand-area {
   display: inline-block;
@@ -67,19 +68,29 @@ input.toggler {
   visibility: hidden;
 }
 
-input.toggler:checked + .menu-nav {
+input.toggler:checked ~ .menu-nav {
   visibility: visible;
   background-color: #0f0f0f;
   text-transform: uppercase;
 }
-input.toggler:checked + .menu-nav ul.nav-items > li.nav-item {
+input.toggler:checked ~ .menu-nav ul.nav-items > li.nav-item {
   padding: 25px;
   display: flex;
   align-content: center;
   justify-content: center;
 }
-input.toggler:checked + .menu-nav ul.nav-items > li.nav-item a.nav-link {
+input.toggler:checked ~ .menu-nav ul.nav-items > li.nav-item a.nav-link {
   color: #ffffff;
+}
+
+input.toggler:checked + .panel > .menu-btn > .btn-lines > .btn-line {
+  transition: all 0.3s ease-out;
+}
+input.toggler:checked + .panel > .menu-btn > .btn-lines > .btn-line.line1 {
+  width: 16.8px;
+}
+input.toggler:checked + .panel > .menu-btn > .btn-lines > .btn-line.line3 {
+  width: 28px;
 }
 
 /*# sourceMappingURL=style.css.map */
