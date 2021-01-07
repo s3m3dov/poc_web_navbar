@@ -1,2 +1,12 @@
 @import 'config';
 @import 'navbar';
+//-------------------------
+//--------------------
+main, body {
+    background: $bg-color;
+    background-blend-mode: $grad2-bm;
+}
+.container {
+    color: $gr-white;
+    padding: 52px 44px;
+}

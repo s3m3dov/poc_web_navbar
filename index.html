@@ -5,23 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body" id="body">
     <nav>
-        <input type="checkbox" class="toggler">
-        <div class="panel">
-            <div class="menu-btn">
-                <div class="btn-lines">
+        <div class="panel" id="panel">
+            <div class="menu-btn" id="menu-btn">
+                <div class="btn-lines" id="btn-lines">
                     <div class="btn-line line1"></div>
                     <div class="btn-line line2"></div>
                     <div class="btn-line line3"></div>
                     </div>
             </div>
-            <div class="brand-area">
-                <p class="brand-text">nenecan</p>
+            <div class="search-area">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" alt="Seach Icon" class="nav-icon" id="search-icon">
+                    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="search" name="search" id="bsearch" placeholder="Search...">
+                <img src="./icons/instagram.svg" alt="Logo Icon" class="nav-icon" id="logo-icon"> 
+            </div>
+            <div class="icon-area">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" alt="Cart Icon" class="nav-icon" id="cart-icon">
+                    <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" alt="User Icon" class="nav-icon" id="user-icon">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>
+                </svg>
             </div>
         </div>
-        <div class="menu-nav">
+        <div class="menu-nav" id="menu-nav">
             <ul class="nav-items">
                 <li class="nav-item">
                     <a href="#" class="nav-link active">home</a>
@@ -44,5 +57,72 @@
             </ul>
         </div>
     </nav>
+
+    <main id="main" class="main">
+        <div class="container">
+            <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium ipsa, eveniet cumque cupiditate nemo ipsum hic, rem neque fugit enim error laudantium excepturi tempore, cum exercitationem consequatur sit!</p>
+            </div>
+            <div>
+                <p>Minus unde ea eveniet natus nam eaque earum quidem atque similique, vel eum odio aut possimus nisi reiciendis porro nulla voluptatibus esse aliquam nobis. Rem aperiam porro reprehenderit.</p>
+            </div>
+            <div>
+                <p>Aliquid modi accusantium veniam laborum laboriosam excepturi ab consequuntur, eligendi, odio aliquam placeat optio dolor, voluptatem iste nostrum expedita sint iure quisquam quos suscipit distinctio quam. Hic, eligendi.</p>
+            </div>
+            <div>
+                <p>Esse temporibus quas non consequatur eligendi voluptatibus provident quaerat eius, magni laudantium aspernatur incidunt cum, quia repellendus qui sapiente. Natus, vero? Optio mollitia corrupti debitis nesciunt iusto labore.</p>
+            </div>
+            <div>
+                <p>Molestias perferendis quas, omnis tempore dolores maxime? Culpa sed accusamus pariatur eaque beatae voluptatum aliquid dignissimos, unde ea quo. Consectetur alias nobis eum sint quasi voluptate libero distinctio.</p>
+            </div>
+            <div>
+                <p>Est odit non nesciunt veniam corrupti velit totam placeat dicta. At dolore, consequatur numquam quisquam rerum ex esse pariatur ullam ipsum nemo neque animi tempore quam quos magnam?</p>
+            </div>
+            <div>
+                <p>Dolorum adipisci, rem quo beatae exercitationem odio ipsum eius praesentium modi minus hic, sequi enim error nostrum accusamus inventore commodi sapiente velit iure in natus a dolorem. At?</p>
+            </div>
+            <div>
+                <p>Modi est ea nam necessitatibus aspernatur praesentium! Nihil veniam nesciunt fuga ad ullam hic officia voluptatum dicta saepe excepturi, aliquid voluptas doloremque explicabo doloribus possimus. Commodi, qui sit.</p>
+            </div>
+            <div>
+                <p>Delectus iusto mollitia, libero ipsam similique voluptatibus vero facere nam accusamus minus non accusantium dolorem tempore consequatur velit quo explicabo labore incidunt? Ipsa doloribus itaque esse suscipit cum?</p>
+            </div>
+            <div>
+                <p>Unde architecto ex dolor porro nemo facilis, ipsum nam vitae nulla. Officiis quia eveniet, magnam nobis eaque iste porro aliquid unde, dolores laborum quos, earum incidunt consectetur veniam.</p>
+            </div>
+            <div>
+                <p>Veniam nihil, minus libero ipsa alias eum quam, soluta culpa dignissimos, nobis voluptatum. Doloremque aperiam ipsum voluptate laborum magnam culpa voluptates recusandae tempora. Illo eligendi fugit asperiores voluptatibus!</p>
+            </div>
+            <div>
+                <p>Consectetur nam dolore ea ipsam fuga cum sapiente. Ipsam, dolorum necessitatibus deserunt enim tempora iste tenetur aliquid hic accusamus quas optio assumenda explicabo voluptatem aperiam alias eos quos.</p>
+            </div>
+            <div>
+                <p>Perspiciatis fugiat omnis dolor commodi voluptates earum magni ea praesentium cum cumque. Veniam maiores voluptatem autem repellat hic. Velit quis fuga commodi voluptate nam facilis ex quibusdam? Deleniti.</p>
+            </div>
+            <div>
+                <p>Dolorum fuga incidunt, delectus facilis mollitia distinctio aut quasi amet eligendi, maxime corrupti eum magni nam omnis. Illo harum modi nisi aut, accusamus dolor inventore possimus porro vel!</p>
+            </div>
+            <div>
+                <p>Culpa ducimus praesentium impedit dolor minima minus fugit dicta voluptates repellat dolores neque perspiciatis vel perferendis et atque facere ipsa exercitationem odio, corrupti numquam optio laboriosam non. Provident.</p>
+            </div>
+            <div>
+                <p>Illum natus saepe quidem eaque perferendis quisquam quia consequatur, distinctio obcaecati. Quidem dolorem aliquam praesentium, cupiditate odio quasi porro libero. Officia quidem perferendis illo magnam alias est eos!</p>
+            </div>
+            <div>
+                <p>Officiis minima voluptas maiores eveniet atque distinctio, omnis iusto quam totam consequatur unde, aliquid rem amet porro rerum beatae dolorem eligendi corporis! Vel ipsa voluptas architecto? Vitae, aut.</p>
+            </div>
+            <div>
+                <p>Distinctio facilis itaque illum provident tempore sunt totam atque voluptates ab quos, aliquid rerum suscipit porro cupiditate, sed vitae laborum, velit nobis esse similique minus incidunt. Minus, saepe!</p>
+            </div>
+            <div>
+                <p>Odio sit dolorum accusamus cum soluta ea sint dolore praesentium fugiat architecto tempora ducimus excepturi quo velit fugit suscipit, rem quisquam tenetur distinctio labore optio ab non facere!</p>
+            </div>
+            <div>
+                <p>In ratione hic eligendi libero maiores atque dolorum eius repellat nemo esse illum nulla laboriosam ipsa, nisi nesciunt inventore commodi! Eaque fugit dicta doloremque odio harum nihil voluptatum.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/nav.js"></script>
 </body>
 </html>
