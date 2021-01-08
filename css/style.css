@@ -128,17 +128,17 @@ body {
 /* --- Menu-Nav --- */
 .menu-nav {
   top: 60px;
-  left: -250px;
+  left: -400px;
   width: 75%;
   height: calc(100vh - 60px);
   background: radial-gradient(100% 225% at 100% 0%, #411f1f 0%, #242424a4 100%), linear-gradient(236deg, #2b2c2c 0%, #333333 100%), linear-gradient(135deg, #272727 0%, #049797 36%, #2c2c2c 36%, #3c3c3c 60%, #291010 60%, #07456F 67%, #2b2b2b 67%, #a2a2a2 100%);
   background-blend-mode: overlay, hard-light, normal;
   text-transform: uppercase;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -khtml-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -khtml-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
   position: fixed;
   visibility: hidden;
   overflow-y: scroll;
@@ -147,6 +147,11 @@ body {
   visibility: visible;
   top: 60px;
   left: 0;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  -khtml-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
   /*
       ul.nav-items > li.nav-item {
       margin-left: 0;

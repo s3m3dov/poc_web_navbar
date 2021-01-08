@@ -91,13 +91,13 @@
 /* --- Menu-Nav --- */
 .menu-nav {
     top: 60px;
-    left: -250px;
+    left: -400px;
     width: 75%;
     height: calc(100vh - 60px);
     background: $grad2-b;
     background-blend-mode: $grad2-bm;
     text-transform: uppercase;
-    @include transition(all 0.2s ease-in);
+    @include transition(all 0.2s ease-out);
     position: fixed;
     visibility: hidden;
     overflow-y: scroll;
@@ -105,6 +105,7 @@
         visibility: visible;
         top: 60px;
         left: 0;
+        @include transition( 0.2s ease-out);
         /*
             ul.nav-items > li.nav-item {
             margin-left: 0;
