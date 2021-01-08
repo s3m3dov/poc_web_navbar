@@ -48,7 +48,7 @@ body {
   padding: 15px 10px;
 }
 .panel .menu-btn .btn-line {
-  background-color: #f85051;
+  background-color: #cecece;
   transition: all 0.2s ease-out;
   width: 35px;
   height: 2px;
