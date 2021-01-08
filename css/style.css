@@ -18,32 +18,35 @@ body {
 /* --- Panel --- */
 .panel {
   display: flex;
-  height: 42px;
+  height: 50px;
   width: 100%;
   z-index: 2;
   position: fixed;
   background: radial-gradient(100% 225% at 100% 0%, #411f1f 0%, #242424a4 100%), linear-gradient(236deg, #2b2c2c 0%, #333333 100%), linear-gradient(135deg, #272727 0%, #049797 36%, #2c2c2c 36%, #3c3c3c 60%, #291010 60%, #07456F 67%, #2b2b2b 67%, #a2a2a2 100%);
   background-blend-mode: overlay, hard-light, normal;
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -khtml-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -khtml-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 .panel.active {
   width: 75%;
 }
+.panel.active .search-area {
+  visibility: hidden;
+}
 .panel .menu-btn {
+  margin-left: 10px;
   display: inline-block;
-  padding: 10.5px 8px;
-  background-color: #000000f3;
+  padding: 15px 10px;
 }
 .panel .menu-btn .btn-line {
   background-color: #f85051;
-  transition: all 0.3s ease-out;
-  width: 28px;
-  height: 1px;
-  margin-bottom: 7px;
+  transition: all 0.2s ease-out;
+  width: 35px;
+  height: 2px;
+  margin-bottom: 8px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -khtml-border-radius: 10px;
@@ -51,10 +54,10 @@ body {
   border-radius: 10px;
 }
 .panel .menu-btn .btn-line.line2 {
-  width: 22.4px;
+  width: 26.25px;
 }
 .panel .menu-btn .btn-line.line3 {
-  width: 16.8px;
+  width: 17.5px;
 }
 .panel .search-area {
   display: flex;
@@ -113,25 +116,25 @@ body {
 
 /* --- Menu-Nav --- */
 .menu-nav {
-  top: 42px;
+  top: 60px;
   left: -370px;
   width: 75%;
-  height: calc(100vh - 42px);
+  height: calc(100vh - 60px);
   background: radial-gradient(100% 225% at 100% 0%, #411f1f 0%, #242424a4 100%), linear-gradient(236deg, #2b2c2c 0%, #333333 100%), linear-gradient(135deg, #272727 0%, #049797 36%, #2c2c2c 36%, #3c3c3c 60%, #291010 60%, #07456F 67%, #2b2b2b 67%, #a2a2a2 100%);
   background-blend-mode: overlay, hard-light, normal;
   text-transform: uppercase;
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -khtml-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -khtml-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   position: fixed;
   visibility: hidden;
   overflow-y: scroll;
 }
 .menu-nav.active {
   visibility: visible;
-  top: 42px;
+  top: 60px;
   left: 0;
   /*
       ul.nav-items > li.nav-item {
@@ -167,25 +170,25 @@ body {
 }
 
 .btn-lines.active > .btn-line {
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
 }
 .btn-lines.active > .btn-line.line1 {
-  width: 16.8px;
+  width: 17.5px;
 }
 .btn-lines.active > .btn-line.line3 {
-  width: 28px;
+  width: 35px;
 }
 
 main.main.active {
   margin-left: 75%;
-  height: calc(100%-42px);
+  height: calc(100%-60px);
   overflow: hidden;
   opacity: 0.5;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -khtml-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -khtml-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 body.active {
