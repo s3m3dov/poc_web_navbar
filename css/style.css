@@ -70,6 +70,11 @@ body {
   align-items: center;
   position: relative;
   width: 100%;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -khtml-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 .panel .search-area svg, .panel .search-area img {
   position: relative;
