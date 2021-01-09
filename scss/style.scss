@@ -3,10 +3,19 @@
 //-------------------------
 //--------------------
 main, body {
-    background: $bg-color;
-    background-blend-mode: $grad2-bm;
+    background: $main-b;
+    background-blend-mode: $back-bmode;
 }
 .container {
-    color: $gr-white;
-    padding: 52px 44px;
+    color: $main-c;
+    padding: 52px 50px;
+    div {
+        margin: 10px;
+    }
+}
+footer {
+    padding: 10px 50px;
+    color: $main-c;
+    background: $foot-b;
+    background-blend-mode: $back-bmode;
 }

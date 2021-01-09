@@ -1,16 +1,15 @@
 // Colors
-$nav-backg: #1b1b1b;
-$toggle-backg: #000000f3;
-$toggle-color: #572828;
-$l-gray-color: #85858574;
-$gr-white: #cecece;
-$red-color:  #f85051;
-$l-backg: #330d0d98;
+$main-c: #cecece;   // Main Text Color
+$main-b: #131313;    // Main Background Color
+$sec-c: #f85051;     // Secondary Color
+$sec-b: #330d0d98;   // Secondary Background Color
+$th-b: #85858574;
+$foot-b: #0a0a0a;    // Footer Background
+
 // Gradient Colors
-$gradient1: linear-gradient(180deg, #2c2c2c 0%, #101010 100%);
-$grad2-b: radial-gradient(100% 225% at 100% 0%, #411f1f 0%, #242424a4 100%), linear-gradient(236deg, #2b2c2c 0%, #333333 100%), linear-gradient(135deg, #272727 0%, #049797 36%, #2c2c2c 36%, #3c3c3c 60%, #291010 60%, #07456F 67%, #2b2b2b 67%, #a2a2a2 100%);
-$grad2-bm: overlay, hard-light, normal;
-$bg-color: radial-gradient(100% 225% at 100% 0%, #411f1f 0%, #242424a4 100%), linear-gradient(236deg, #2b2c2c 0%, #333333 100%), linear-gradient(135deg, #272727 0%, #049797 36%, #2c2c2c 36%, #3c3c3c 60%, #291010 60%, #07456F 67%, #2b2b2b 67%, #a2a2a2 100%);
+$g1b: radial-gradient(100% 225% at 100% 0%, #411f1f 0%, #242424a4 100%), linear-gradient(236deg, #2b2c2c 0%, #333333 100%), linear-gradient(135deg, #272727 0%, #049797 36%, #2c2c2c 36%, #3c3c3c 60%, #291010 60%, #07456F 67%, #2b2b2b 67%, #a2a2a2 100%); 
+$g2b: linear-gradient(180deg, #2c2c2c 0%, #101010 100%);
+$back-bmode: overlay, hard-light, normal;
 
 // Font
 $font-stack: 'Nunito Sans', sans-serif;
